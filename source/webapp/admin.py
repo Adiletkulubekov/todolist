@@ -1,11 +1,11 @@
 from django.contrib import admin
-from webapp.models import Article
+from webapp.models import Todolist
 
 # Register your models here.
-admin.site.register(Article)
+admin.site.register(Todolist)
 
 
-class ArticleAdmin(admin.ModelAdmin):
+class TodolistAdmin(admin.ModelAdmin):
     list_display = ['describe', 'status', 'schedule_at']
     list_filter = ['status']
     search_fields = ['describe']
